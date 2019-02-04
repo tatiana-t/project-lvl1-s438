@@ -1,2 +1,7 @@
 #!/usr/bin/env node
-console.log('Welcome to the Brain Games!');
+
+// const welcome = () => {
+//   return console.log('Welcome to the Brain Games!');
+// };
+// welcome();
+import sayHello from '../'
