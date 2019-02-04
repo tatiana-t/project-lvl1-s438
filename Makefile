@@ -1,3 +1,6 @@
-install = npm install
-start = npx bbel-node -- src/bin/brain-games.js
-
+install:
+	npm install
+start:
+	npx bbel-node -- src/bin/brain-games.js
+publish:
+	 npm publish
