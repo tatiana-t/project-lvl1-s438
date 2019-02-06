@@ -29,7 +29,8 @@
     "eslint-plugin-import": "^2.16.0"
   },
   "bin": {
-    "brain-games": "dist/bin/brain-games.js"
+    "brain-games": "dist/bin/brain-games.js",
+    "brain-even": "dist/bin/brain-even.js"
   },
   "files": [
     "dist"
