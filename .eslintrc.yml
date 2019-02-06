@@ -9,7 +9,7 @@
     babel-eslint
 
   extends:
-    - eslint-config-airbnb-base
-    
+    - 'airbnb-base'
+
   plugins:
     - babel
