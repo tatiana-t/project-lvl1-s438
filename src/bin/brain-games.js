@@ -1,9 +1,11 @@
 #!/usr/bin/env node
 
-import getAnswer from '..';
+import sayHello from '..';
 
-console.log('Welcome to the Brain Games!');
+// console.log('Welcome to the Brain Games!');
 
-const name = getAnswer('May I have your name?: ');
+// const name = getAnswer('May I have your name?: ');
 
-console.log(`Hello, ${name}`);
+// console.log(`Hello, ${name}`);
+
+sayHello();
