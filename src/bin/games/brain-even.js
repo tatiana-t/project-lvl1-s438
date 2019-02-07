@@ -1,7 +1,10 @@
 #!/usr/bin/env node
+import readlineSync from 'readline-sync';
 
-import getAnswer from '..';
-
+const getAnswer = (text) => {
+  const answer = readlineSync.question(text);
+  return answer;
+};
 const ROUND_AMOUNT = 3; // количество раундов
 
 console.log('Welcome to the Brain Games!\nAnswer "yes" if number even otherwise answer "no".');
