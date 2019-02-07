@@ -18,7 +18,7 @@ const checkAnswer = (number, answer) => {
 };
 
 // игра
-const question = (rounds) => {
+const evenGame = (rounds) => {
   if (rounds <= 0) {
     console.log(`Congratulations, ${name}!`);
     return;
@@ -32,7 +32,7 @@ const question = (rounds) => {
   // проверка ответа
   if (result) {
     console.log('Correct!');
-    question(rounds - 1);
+    evenGame(rounds - 1);
   } else {
     let correctAnswer = '';
     if (answer === 'yes') {
@@ -40,7 +40,7 @@ const question = (rounds) => {
     } else {
       correctAnswer = 'yes';
     }
-    console.log(`${answer} is wrong answer ;(. Correct answer was ${correctAnswer}.\nLet's try again, ${name}!`);
+    console.log(`"${answer}" is wrong answer ;(. Correct answer was "${correctAnswer}".\nLet's try again, ${name}!`);
   }
 };
-question(ROUND_AMOUNT);
+evenGame(ROUND_AMOUNT);
