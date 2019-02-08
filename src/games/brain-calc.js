@@ -20,10 +20,11 @@ const getCorrectAnswer = (numbers, operator) => {
 
 // const ROUND_AMOUNT = 3; // количество раундов
 const calcGame = (rounds) => {
+  let result = {};
   if (rounds <= 0) {
     // console.log(`Congratulations, ${name}!`);
-    const result = {win: true};
-    return result;
+    result = { win: true };
+    // return result;
   }
   // спросить и получить ответ
   const numbers = cons((Math.random() * 10).toFixed(), (Math.random() * 10).toFixed());
@@ -43,10 +44,14 @@ const calcGame = (rounds) => {
     console.log('Correct!');
     calcGame(rounds - 1);
   } else {
-    const result = {win: false, answer: answer, correctAnswer: correctAnswer};
-    return result;
-    // console.log(`"${answer}" is wrong answer ;(. Correct answer was "${correctAnswer}".\nLet's try again, ${name}!`);
+    result = {
+      win: false,
+      answer,
+      correctAnswer,
+    };
+    // return result;
   }
+  return result;
 };
 // calcGame(ROUND_AMOUNT);
 export default calcGame;

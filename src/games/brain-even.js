@@ -83,7 +83,6 @@ const evenGame = (rounds) => {
 //     const result = {win: false, answer: answer, correctAnswer: correctAnswer};
 //     // console.log('error', result);
 //     return result;
-//     // console.log(`"${answer}" is wrong answer ;(. Correct answer was "${correctAnswer}".\nLet's try again, ${name}!`);
 //   }
 // };
 export default evenGame;
