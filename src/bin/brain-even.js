@@ -4,6 +4,7 @@
 // import gameOver from '../games/modules/gameOver';
 // import ROUND_AMOUNT from '../games/modules/rounds';
 import evenGame from '../games/brain-even';
+
 const ROUND_AMOUNT = 3; // количество раундов
 evenGame(ROUND_AMOUNT);
 

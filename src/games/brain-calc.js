@@ -1,16 +1,9 @@
-#!/usr/bin/env node
-
 import {
   cons,
   car,
   cdr,
 } from 'hexlet-pairs';
-
-import getAnswer from '../../calc';
-
-console.log('Welcome to the Brain Games!\nWhat is the result of the expression?');
-const name = getAnswer('May I have your name? ');
-console.log(`Hello, ${name}!\n`);
+import getAnswer from './modules/getAnswer';
 
 
 // вычисление ответа
@@ -25,11 +18,12 @@ const getCorrectAnswer = (numbers, operator) => {
 };
 
 
-const ROUND_AMOUNT = 3; // количество раундов
+// const ROUND_AMOUNT = 3; // количество раундов
 const calcGame = (rounds) => {
   if (rounds <= 0) {
-    console.log(`Congratulations, ${name}!`);
-    return;
+    // console.log(`Congratulations, ${name}!`);
+    const result = {win: true};
+    return result;
   }
   // спросить и получить ответ
   const numbers = cons((Math.random() * 10).toFixed(), (Math.random() * 10).toFixed());
@@ -49,7 +43,10 @@ const calcGame = (rounds) => {
     console.log('Correct!');
     calcGame(rounds - 1);
   } else {
-    console.log(`"${answer}" is wrong answer ;(. Correct answer was "${correctAnswer}".\nLet's try again, ${name}!`);
+    const result = {win: false, answer: answer, correctAnswer: correctAnswer};
+    return result;
+    // console.log(`"${answer}" is wrong answer ;(. Correct answer was "${correctAnswer}".\nLet's try again, ${name}!`);
   }
 };
-calcGame(ROUND_AMOUNT);
+// calcGame(ROUND_AMOUNT);
+export default calcGame;
