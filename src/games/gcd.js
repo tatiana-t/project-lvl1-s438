@@ -23,7 +23,7 @@ const gcdGame = () => {
     const i = 2;
     const resultArray = [];
     const count = (num, divisors, acc) => {
-      console.log(num, acc);
+      // console.log(num, acc);
       if (acc > num) {
         return divisors;
       }
@@ -46,7 +46,7 @@ const gcdGame = () => {
     const checkArrays = () => {
       aDivisor.forEach((aItem) => {
         bDivisor.forEach((bItem) => {
-          console.log(aItem, bItem);
+          // console.log(aItem, bItem);
           if (aItem === bItem) {
             resultArray.push(aItem);
           }
@@ -63,7 +63,7 @@ const gcdGame = () => {
     if (result.length === 0) {
       return (1).toString();
     }
-    console.log('result ', result);
+    // console.log('result ', result);
     return (result[result.length - 1]).toString();
   };
 
