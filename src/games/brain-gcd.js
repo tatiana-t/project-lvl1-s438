@@ -21,53 +21,48 @@ const getCorrectAnswer = (numbers) => {
     }
     if (num === 1) {
       divisors.push(acc);
-      return
+      return divisors;
     }
 
     if (num % acc === 0) {
       divisors.push(acc);
       return count(num / acc, divisors, acc);
-    } else {
-
-      // console.log(acc + 1);
-      return count(num, divisors, acc + 1);
     }
-  }
+    return count(num, divisors, acc + 1);
+  };
 
   count(a, aDivisor, i);
   count(b, bDivisor, i);
-console.log(aDivisor);
-console.log(bDivisor);
+  // console.log(aDivisor);
+  // console.log(bDivisor);
   const checkArrays = () => {
     aDivisor.forEach((aItem) => {
       bDivisor.forEach((bItem) => {
         console.log(aItem, bItem);
         if (aItem === bItem) {
-
           resultArray.push(aItem);
         }
-      })
-    })
+      });
+    });
   };
-checkArrays();
+  checkArrays();
 
-const result = resultArray.sort((a, b) => {
-    if (a > b) return a;
-    if (b > a) return b;
+  const result = resultArray.sort((x, y) => {
+    if (x > y) return x;
+    if (y > x) return y;
+    return resultArray;
   });
   if (result.length === 0) {
-    return 1
-  } else {
-    return result[result.length-1];
+    return 1;
   }
-
+  return result[result.length - 1];
 };
 
 const gcdGame = (rounds) => {
   let result = {};
   if (rounds <= 0) {
     result = {
-      win: true
+      win: true,
     };
   }
   // спросить и получить ответ
