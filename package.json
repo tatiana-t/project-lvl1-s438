@@ -1,6 +1,6 @@
 {
   "name": "brain-games-poire",
-  "version": "1.4.1",
+  "version": "1.4.5",
   "description": "edu project",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -31,10 +31,10 @@
   },
   "bin": {
     "brain-games": "dist/bin/brain-games.js",
-    "brain-even": "dist/src/brain-even.js",
-    "brain-calc": "dist/src/brain-calc.js",
-    "brain-gcd": "dist/src/brain-gcd.js",
-    "brain-progression": "dist/src/brain-progression.js"
+    "brain-even": "dist/bin/brain-even.js",
+    "brain-calc": "dist/bin/brain-calc.js",
+    "brain-gcd": "dist/bin/brain-gcd.js",
+    "brain-progression": "dist/bin/brain-progression.js"
   },
   "files": [
     "dist"
