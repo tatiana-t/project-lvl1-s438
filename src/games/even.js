@@ -5,8 +5,8 @@ const evenGame = () => {
 
   const generateQuestion = () => (Math.random() * 100).toFixed();
 
-  const checkAnswer = (number) => {
-    if (number % 2 === 0) {
+  const checkAnswer = (question) => {
+    if (question % 2 === 0) {
       return 'yes';
     }
     return 'no';
