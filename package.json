@@ -33,7 +33,8 @@
     "brain-games": "dist/bin/brain-games.js",
     "brain-even": "dist/src/brain-even.js",
     "brain-calc": "dist/src/brain-calc.js",
-    "brain-calc": "dist/src/brain-gcd.js"
+    "brain-gcd": "dist/src/brain-gcd.js",
+    "brain-progression": "dist/src/brain-progression.js"
   },
   "files": [
     "dist"

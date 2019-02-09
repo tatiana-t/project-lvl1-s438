@@ -8,6 +8,8 @@ calc:
 	npx babel-node -- src/bin/brain-calc.js
 gcd:
 	npx babel-node -- src/bin/brain-gcd.js
+progr:
+	npx babel-node -- src/bin/brain-progression.js
 publish:
 	npm publish
 lint:
