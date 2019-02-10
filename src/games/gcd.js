@@ -28,8 +28,8 @@ const setOrder = (a, b) => {
 
 const gcd = (a, b) => {
   if (b > 0) {
-    const k = a % b;
-    return gcd(b, k);
+    const revisor = a % b;
+    return gcd(b, revisor);
   }
   return a;
 };
