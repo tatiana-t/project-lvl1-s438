@@ -1,8 +1,9 @@
 import game from '../core';
+import generateNum from '../utils';
 
 const description = 'Answer "yes" if number even otherwise answer "no".';
 
-const generateQuestion = () => (Math.random() * 100).toFixed();
+const generateQuestion = () => generateNum(0, 100);//(Math.random() * 100).toFixed();
 
 const checkAnswer = (question) => {
   if (question % 2 === 0) {

@@ -1,8 +1,9 @@
 import game from '../core';
+import generateNum from '../utils';
 
 const description = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
-const generateQuestion = () => (Math.random() * 10).toFixed();
+const generateQuestion = () => generateNum(0, 10);
 
 const checkAnswer = (question) => {
   if (+question === 1 && +question === 2) {

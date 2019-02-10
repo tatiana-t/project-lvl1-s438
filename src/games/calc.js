@@ -4,11 +4,12 @@ import {
   cdr,
 } from 'hexlet-pairs';
 import game from '../core';
+import generateNum from '../utils';
 
 const description = 'What is the result of the expression?';
 
 const generateQuestion = () => {
-  const numbers = cons((Math.random() * 10).toFixed(), (Math.random() * 10).toFixed());
+  const numbers = cons(generateNum(0, 10), generateNum(0, 10));
   const operators = ['+', '-', '*'];
   const getOperator = (operatorsArray) => {
     const i = (Math.random() * 2).toFixed();
