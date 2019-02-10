@@ -1,5 +1,3 @@
-const generateNum = (start, end) => {
-  return Math.round(start - 0.5 + Math.random() * (end - start + 1));
-};
+const generateNum = (start, end) => Math.round(start - 0.5 + Math.random() * (end - start + 1));
 
 export default generateNum;

@@ -26,7 +26,7 @@ const findFirst = (progression) => {
   return null;
 };
 
-const findD = (progression, first) => {
+const findD = (progression) => {
   if (progression[0] !== '..' && progression[1] !== '..') {
     return +progression[1] - +progression[0];
   }
@@ -47,9 +47,9 @@ const checkAnswer = (question) => {
   const d = findD(progression, first);
   const space = findSpace(progression);
   if (first) {
-   return (first + d * space).toString();
+    return (first + d * space).toString();
   }
-  return (+progression[1] - d).toString();
+   return (+progression[1] - d).toString();
 };
 
 const progressionGame = () => game(description, generateQuestion, checkAnswer);
