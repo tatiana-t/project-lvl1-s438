@@ -13,10 +13,10 @@
 
 import readlineSync from 'readline-sync';
 
-const ROUND_AMOUNT = 3;
-const game = (rules, generateQuestion, checkAnswer) => {
+const roundAmount = 3;
+const game = (description, generateQuestion, checkAnswer) => {
   // приветствие, правила
-  console.log(`Welcome to the Brain Games!\n${rules}`);
+  console.log(`Welcome to the Brain Games!\n${description}`);
 
   // знакомство, запись имени
   const name = readlineSync.question('\nMay I have your name? ');
@@ -45,7 +45,7 @@ const game = (rules, generateQuestion, checkAnswer) => {
   };
 
   // вызов игры
-  round(ROUND_AMOUNT);
+  return round(roundAmount);
 };
 
 export default game;
