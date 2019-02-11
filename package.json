@@ -1,6 +1,6 @@
 {
   "name": "brain-games-poire",
-  "version": "1.5.7",
+  "version": "1.5.8",
   "description": "edu project",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",

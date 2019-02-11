@@ -3,11 +3,11 @@ import generateNum from '../utils';
 
 const description = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
-const generateQuestion = () => generateNum(0, 10);
+const generateQuestion = () => generateNum(1, 10);
 
 const checkAnswer = (question) => {
-  if (+question === 1 && +question === 2) {
-    return 'yes'; // костыль?
+  if (+question === 1) {
+    return 'no';
   }
   const checkPrime = (num, i) => {
     if (+num % i === 0) {
