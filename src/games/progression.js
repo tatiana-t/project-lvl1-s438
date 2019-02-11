@@ -12,7 +12,7 @@ const generateQuestion = () => {
   const progressionArray = [];
   progressionArray.push(firstNum);
 
-  for (let i = 1; i < progressionLength + 1; i++) {
+  for (let i = 1; i < progressionLength + 1; i += 1) {
     progressionArray.push(+firstNum + +d * i);
   }
   progressionArray[space] = '..';
@@ -34,7 +34,7 @@ const findD = (progression) => {
 };
 
 const findSpace = (progression) => {
-  for (let i = 0; i < progression.length; i++) {
+  for (let i = 0; i < progression.length; i += 1) {
     if (progression[i] === '..') {
       return i;
     }
@@ -49,7 +49,7 @@ const checkAnswer = (question) => {
   if (first) {
     return (first + d * space).toString();
   }
-   return (+progression[1] - d).toString();
+  return (+progression[1] - d).toString();
 };
 
 const progressionGame = () => game(description, generateQuestion, checkAnswer);
